@@ -1,0 +1,596 @@
+
+
+
+
+
+info [Sat Apr 09 2022 17:40:10 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/login?asdf=1234
+info [Sat Apr 09 2022 17:40:10 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Sat Apr 09 2022 17:40:10 GMT+0800 (China Standard Time)]  QUERY: { asdf: '1234' }
+info [Sat Apr 09 2022 17:40:10 GMT+0800 (China Standard Time)]  BODY: {}
+info [Sat Apr 09 2022 17:40:23 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/login?asdf=1234
+info [Sat Apr 09 2022 17:40:23 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Sat Apr 09 2022 17:40:23 GMT+0800 (China Standard Time)]  QUERY: { asdf: '1234' }
+info [Sat Apr 09 2022 17:40:23 GMT+0800 (China Standard Time)]  BODY: {}
+info [Sat Apr 09 2022 17:40:24 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/login?asdf=1234
+info [Sat Apr 09 2022 17:40:24 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Sat Apr 09 2022 17:40:24 GMT+0800 (China Standard Time)]  QUERY: { asdf: '1234' }
+info [Sat Apr 09 2022 17:40:24 GMT+0800 (China Standard Time)]  BODY: {}
+
+
+
+
+
+info [Sat Apr 09 2022 19:42:41 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/login?asdf=1234
+info [Sat Apr 09 2022 19:42:41 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Sat Apr 09 2022 19:42:41 GMT+0800 (China Standard Time)]  QUERY: { asdf: '1234' }
+info [Sat Apr 09 2022 19:42:41 GMT+0800 (China Standard Time)]  BODY: {}
+info [Sat Apr 09 2022 19:42:44 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/favicon.ico
+info [Sat Apr 09 2022 19:42:44 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Sat Apr 09 2022 19:42:44 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Sat Apr 09 2022 19:42:44 GMT+0800 (China Standard Time)]  BODY: {}
+
+
+
+
+
+
+
+
+
+
+info [Mon Apr 11 2022 02:27:06 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:27:06 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:27:06 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:27:06 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:34:41 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:34:41 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:34:41 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:34:41 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:35:42 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:35:42 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:35:42 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:35:42 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:36:32 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:36:32 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:36:32 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:36:32 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:36:57 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:36:57 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:36:57 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:36:57 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:38:35 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:38:35 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:38:35 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:38:35 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+info [Mon Apr 11 2022 02:40:01 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 02:40:01 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 02:40:01 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 02:40:01 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+
+
+
+
+info [Mon Apr 11 2022 04:07:09 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:07:09 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:07:09 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:07:09 GMT+0800 (China Standard Time)]  BODY: {}
+
+info [Mon Apr 11 2022 04:13:18 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:13:18 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:13:18 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:13:18 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:13:18 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+
+info [Mon Apr 11 2022 04:14:13 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:14:13 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:14:13 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:14:13 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:14:14 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:14:14 GMT+0800 (China Standard Time)]  ReferenceError: jwt is not defined
+    at checkAuth (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\utils\checkAuth.js:13:22)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:341:12)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:174:3)
+    at router (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:47:12)
+
+
+info [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:14:50 GMT+0800 (China Standard Time)]  ReferenceError: jwt is not defined
+    at checkAuth (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\utils\checkAuth.js:13:22)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:341:12)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:174:3)
+    at router (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:47:12)
+
+info [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:15:26 GMT+0800 (China Standard Time)]  JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\jsonwebtoken\verify.js:63:17)
+    at checkAuth (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\utils\checkAuth.js:16:26)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:341:12)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:174:3)
+
+
+info [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:16:38 GMT+0800 (China Standard Time)]  JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\jsonwebtoken\verify.js:63:17)
+    at checkAuth (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\utils\checkAuth.js:16:26)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\layer.js:95:5)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:341:12)
+    at next (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\express\lib\router\index.js:174:3)
+
+info [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:18:59 GMT+0800 (China Standard Time)]  { code: 4, status: 401 }
+
+info [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:20:36 GMT+0800 (China Standard Time)]  { code: 4, status: 401 }
+
+info [Mon Apr 11 2022 04:21:19 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:21:19 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:21:19 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:21:19 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:21:19 GMT+0800 (China Standard Time)]  Error occured:  { code: 4, status: 401 }
+
+info [Mon Apr 11 2022 04:21:53 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:21:53 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:21:53 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:21:53 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:21:53 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+
+info [Mon Apr 11 2022 04:22:14 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:22:14 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:22:14 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:22:14 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:22:14 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:22:42 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:22:42 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:22:42 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:22:42 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:22:42 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:22:52 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:22:52 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:22:52 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:22:52 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:22:52 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:22:58 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:22:58 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:22:58 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:22:58 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:22:58 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+
+info [Mon Apr 11 2022 04:24:14 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:24:14 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:24:14 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:24:14 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:24:14 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:24:20 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 04:24:20 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:24:20 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:24:20 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+info [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:24:21 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM `users` WHERE `id` = `fieldCount` = 0, `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, `message` = '', `protocol41` = true, `changedRows` = 0, `insert_id` = 8, `affected_rows` = 1, `changed_rows` = 0"
+}
+
+info [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:29:18 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM `users` WHERE `id` = `fieldCount` = 0, `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, `message` = '', `protocol41` = true, `changedRows` = 0, `insert_id` = 8, `affected_rows` = 1, `changed_rows` = 0"
+}
+info [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:29:23 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM `users` WHERE `id` = `fieldCount` = 0, `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, `message` = '', `protocol41` = true, `changedRows` = 0, `insert_id` = 8, `affected_rows` = 1, `changed_rows` = 0"
+}
+
+info [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:29:35 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, ...' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM `users` WHERE `id` = `fieldCount` = 0, `affectedRows` = 1, `insertId` = 8, `serverStatus` = 2, `warningCount` = 0, `message` = '', `protocol41` = true, `changedRows` = 0, `insert_id` = 8, `affected_rows` = 1, `changed_rows` = 0"
+}
+
+info [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:32:59 GMT+0800 (China Standard Time)]  { code: 3, status: 402 }
+
+info [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:33:14 GMT+0800 (China Standard Time)]  { code: 3, status: 402 }
+
+info [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:33:38 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `iat` = 1649622261, `exp` = 1649625861' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `iat` = 1649622261, `exp` = 1649625861' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM `users` WHERE `id` = `id` = '[object Object]', `iat` = 1649622261, `exp` = 1649625861"
+}
+
+
+info [Mon Apr 11 2022 04:42:06 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:42:06 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:42:06 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:42:06 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:42:06 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:42:09 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:42:09 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:42:09 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:42:09 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:42:09 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:42:17 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 04:42:17 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:42:17 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:42:17 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+error [Mon Apr 11 2022 04:42:18 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:42:18 GMT+0800 (China Standard Time)]  ReferenceError: newUserId is not defined
+    at signup (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\controllers\auth.controller.js:46:25)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+info [Mon Apr 11 2022 04:43:06 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 04:43:06 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:43:06 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:43:06 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+info [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:43:07 GMT+0800 (China Standard Time)]  Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `iat` = 1649623387, `exp` = 1649626987' at line 1
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:16:63)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `iat` = 1649623387, `exp` = 1649626987' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM `users` WHERE `id` = `id` = 10, `iat` = 1649623387, `exp` = 1649626987'
+}
+
+info [Mon Apr 11 2022 04:44:07 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:44:07 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:44:07 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:44:07 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:44:08 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 04:44:08 GMT+0800 (China Standard Time)]  ReferenceError: newUserId is not defined
+    at me (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\controllers\auth.controller.js:69:25)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+info [Mon Apr 11 2022 04:44:32 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:44:32 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:44:32 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:44:32 GMT+0800 (China Standard Time)]  BODY: {}
+info [Mon Apr 11 2022 04:45:10 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:45:10 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:45:10 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:45:10 GMT+0800 (China Standard Time)]  BODY: {}
+
+info [Mon Apr 11 2022 04:46:45 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:46:45 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:46:45 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:46:45 GMT+0800 (China Standard Time)]  BODY: {}
+info [Mon Apr 11 2022 04:51:46 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:51:46 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:51:46 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:51:46 GMT+0800 (China Standard Time)]  BODY: {}
+info [Mon Apr 11 2022 04:55:53 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:55:53 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:55:53 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:55:53 GMT+0800 (China Standard Time)]  BODY: {}
+info [Mon Apr 11 2022 04:56:43 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:56:43 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:56:43 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:56:43 GMT+0800 (China Standard Time)]  BODY: {}
+info [Mon Apr 11 2022 04:56:46 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:56:46 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:56:46 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:56:46 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:56:46 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Mon Apr 11 2022 04:56:53 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:56:53 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:56:53 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:56:53 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:56:53 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+
+info [Mon Apr 11 2022 04:58:42 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:58:42 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:58:42 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:58:42 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 04:58:42 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 04:59:45 GMT+0800 (China Standard Time)]  BODY: {}
+
+
+info [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 05:00:28 GMT+0800 (China Standard Time)]  { code: 3, status: 402 }
+info [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 05:01:29 GMT+0800 (China Standard Time)]  { code: 3, status: 402 }
+info [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  BODY: {}
+error [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 05:01:31 GMT+0800 (China Standard Time)]  { code: 3, status: 402 }
+info [Mon Apr 11 2022 05:01:54 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 05:01:54 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 05:01:54 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 05:01:54 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+error [Mon Apr 11 2022 05:01:54 GMT+0800 (China Standard Time)]  Error occured:  Email duplicated! Please use another one!
+info [Mon Apr 11 2022 05:01:58 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 05:01:58 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 05:01:58 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 05:01:58 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: '1234' }
+error [Mon Apr 11 2022 05:01:58 GMT+0800 (China Standard Time)]  Error occured:  Email duplicated! Please use another one!
+info [Mon Apr 11 2022 08:46:12 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 08:46:12 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:46:12 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:46:12 GMT+0800 (China Standard Time)]  BODY: { username: 'Test', email: 'test@gmail.com', password: 'asdf' }
+error [Mon Apr 11 2022 08:46:12 GMT+0800 (China Standard Time)]  Error occured:  Email duplicated! Please use another one!
+
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signup
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  BODY: { username: 'test1', email: 'test1@gmail.com', password: 'asdf' }
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/me
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:50:05 GMT+0800 (China Standard Time)]  BODY: {}
+
+info [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: 'test' }
+error [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 08:55:25 GMT+0800 (China Standard Time)]  { code: 2, status: 402 }
+info [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: 'test' }
+error [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Mon Apr 11 2022 08:55:32 GMT+0800 (China Standard Time)]  { code: 2, status: 402 }
+
+info [Mon Apr 11 2022 08:56:02 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Mon Apr 11 2022 08:56:02 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 08:56:02 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 08:56:02 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: 'test' }
+error [Mon Apr 11 2022 08:56:02 GMT+0800 (China Standard Time)]  Error occured:  Email or Password is not correct!
+info [Mon Apr 11 2022 09:08:41 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Mon Apr 11 2022 09:08:41 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 09:08:41 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 09:08:41 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: 'asdf' }
+error [Mon Apr 11 2022 09:08:41 GMT+0800 (China Standard Time)]  Error occured:  Email or Password is not correct!
+
+
+info [Mon Apr 11 2022 09:10:21 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Mon Apr 11 2022 09:10:21 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Mon Apr 11 2022 09:10:21 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Mon Apr 11 2022 09:10:21 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: 'asdf' }
+error [Mon Apr 11 2022 09:10:21 GMT+0800 (China Standard Time)]  Error occured:  Password is not correct!
