@@ -19,4 +19,24 @@ module.exports = {
         code: 5,
         status: 401,
     },
+    THUMBUP_AGAIN_FORBIDDEN: {
+        code: 6,
+        status: 402,
+    },
+    THUMBUP_MYSELF: {
+        code: 7,
+        status: 402,
+    },
+    COMMENT_AGAIN_FORBIDDEN: {
+        code: 8,
+        status: 402,
+    },
+    COMMENT_MYSELF: {
+        code: 9,
+        status: 402,
+    },
+    BLOG_NOT_EXIST: {
+        code: 10,
+        status: 402,
+    },
 };

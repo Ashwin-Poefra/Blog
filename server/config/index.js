@@ -13,6 +13,7 @@ const DEBUG = {
     QUERY: true,
     BODY: true,
     SQL: true,
+    RESPONSE: false,
     ERROR: true,
 };
 

@@ -21,7 +21,7 @@ const errorHandler = (res, error) => {
             }
             LOGGER.error("Error occured: ", MESSAGES[errorName]);
 
-            Response(res, errorStatus.status, MESSAGES[errorName]);
+            Response(res, errorStatus.status, {}, MESSAGES[errorName]);
 
             findError = true;
         }
@@ -35,7 +35,7 @@ const errorHandler = (res, error) => {
         LOGGER.error(MESSAGES.UNKNOWN_ERROR);
         LOGGER.log(error);
 
-        Response(res, 500, MESSAGES.UNKNOWN_ERROR);
+        Response(res, 500, {}, MESSAGES.UNKNOWN_ERROR);
     }
 };
 

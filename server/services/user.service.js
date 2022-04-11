@@ -26,6 +26,17 @@ const readUsers = async (userData) => {
     }
 };
 
+const readUsersPassword = async (userData) => {
+    try {
+        const QueryBuilder = await DATABASE.get_connection();
+        return await QueryBuilder.select(["id", "password"])
+            .where(userData)
+            .get("users");
+    } catch (error) {
+        throw error;
+    }
+};
+
 const updateUser = async (id, userData) => {
     try {
         const QueryBuilder = await DATABASE.get_connection();
@@ -49,6 +60,7 @@ const deleteUser = async (id) => {
 module.exports = {
     createUser,
     readUsers,
+    readUsersPassword,
     updateUser,
     deleteUser,
 };

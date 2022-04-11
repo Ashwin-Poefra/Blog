@@ -18,7 +18,7 @@ const { ERRORS } = require("../consts");
 const signin = async (req, res, next) => {
     try {
         const { email, password, ...rest } = req.body;
-        const [user] = await userService.readUsers({
+        const [user] = await userService.readUsersPassword({
             email,
         });
 
@@ -34,7 +34,7 @@ const signin = async (req, res, next) => {
                 });
 
                 Response(res, 200, {
-                    userId: newUserId,
+                    userId: user.id,
                     token,
                     expirationTime: EXPIRATION_TIME,
                 });
