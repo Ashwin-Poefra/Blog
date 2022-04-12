@@ -1,5 +1,3 @@
-// node_modules
-
 // utils
 const { Response } = require("../utils");
 

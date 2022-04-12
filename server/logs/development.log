@@ -34019,3 +34019,1927 @@ info [Tue Apr 12 2022 13:07:50 GMT+0800 (China Standard Time)]  {
   ],
   message: ''
 }
+
+info [Tue Apr 12 2022 13:09:20 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blog/5
+info [Tue Apr 12 2022 13:09:20 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:09:20 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:09:20 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:09:20 GMT+0800 (China Standard Time)]  { message: 'Your blog is deleted successfully!' }
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  Error: ER_NON_UNIQ_ERROR: Column 'id' in field list is ambiguous
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readUsers (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\user.service.js:19:14)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_NON_UNIQ_ERROR',
+  errno: 1052,
+  sqlMessage: "Column 'id' in field list is ambiguous",
+  sqlState: '23000',
+  index: 0,
+  sql: 'SELECT `id`, `username`, `email`, `photoUrl` FROM `Blogs`, `users` WHERE `id` = 5 AND `id` = 13'
+}
+info [Tue Apr 12 2022 13:09:34 GMT+0800 (China Standard Time)]  { message: 'Unknown Error occured! Please contact with Manager!' }
+info [Tue Apr 12 2022 13:16:30 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:16:30 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:16:30 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:16:30 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:16:30 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:16:34 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 10,
+  message: ''
+}
+info [Tue Apr 12 2022 13:16:38 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blog/5
+info [Tue Apr 12 2022 13:16:38 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:16:38 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:16:38 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:16:38 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      mainBlogId: 5,
+      like: 2
+    },
+    RowDataPacket {
+      id: 14,
+      userId: 14,
+      username: 'Test1',
+      title: 'Comment2 to Title2',
+      text: 'Comment2 to Title2',
+      imageUrl: null,
+      mainBlogId: 5,
+      like: 2
+    }
+  ],
+  message: ''
+}
+info [Tue Apr 12 2022 13:31:48 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:31:48 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:31:48 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:31:48 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:31:48 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: '1234' }
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  {
+  userId: 13,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY0OTc0MTUxNywiZXhwIjoxNjQ5NzQ1MTE3fQ.lemsHSRlMipXuwhreBEI8SM_yU5IrRkyBoDFvzGIsDA',
+  expirationTime: 3600,
+  message: ''
+}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:31:57 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:31:59 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:31:59 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:31:59 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:31:59 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:31:59 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 10,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:14 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/upload/image
+info [Tue Apr 12 2022 13:32:14 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:14 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:32:14 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:14 GMT+0800 (China Standard Time)]  {
+  imageUrls: [ './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg' ],
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blog
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  BODY: {
+  title: 'qq',
+  text: 'qq',
+  imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg'
+}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  { message: 'Your blog is saved successfully!' }
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:21 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:24 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=qq
+info [Tue Apr 12 2022 13:32:24 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:24 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: 'qq' }
+info [Tue Apr 12 2022 13:32:24 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:24 GMT+0800 (China Standard Time)]  { blogs: [], count: 0, message: '' }
+info [Tue Apr 12 2022 13:32:28 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:28 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:28 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:28 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:28 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:31 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=2&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:31 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:31 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '2', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:31 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:31 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 16,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title6',
+      text: 'Title6',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 17,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title with Image 1',
+      text: 'Title with Image 1',
+      imageUrl: './uploads/994ed6ff-0392-4bd8-ad04-468b8f9575b7-sam-wood.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 18,
+      userId: 13,
+      username: 'Test User',
+      title: 'Image with Title 2',
+      text: 'Image with Title 2',
+      imageUrl: './uploads/7b1c746b-557b-455f-a79d-ed4a0470e1f5-erin-rull.png',
+      like: 0
+    },
+    RowDataPacket {
+      id: 19,
+      userId: 13,
+      username: 'Test User',
+      title: 'asdf',
+      text: 'asdf',
+      imageUrl: './uploads/fdbaabde-2c46-4f1c-b298-0e7c12b92987-lin-yong-zu.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 20,
+      userId: 13,
+      username: 'Test User',
+      title: 'QWER',
+      text: 'QWER',
+      imageUrl: './uploads/c09973a8-749c-4fbd-a343-2c8368603bb7-vali-stirbei.png',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:33 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:33 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:33 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:33 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:33 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:36 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=qq
+info [Tue Apr 12 2022 13:32:36 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:36 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: 'qq' }
+info [Tue Apr 12 2022 13:32:36 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:36 GMT+0800 (China Standard Time)]  { blogs: [], count: 0, message: '' }
+info [Tue Apr 12 2022 13:32:39 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=a
+info [Tue Apr 12 2022 13:32:39 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:39 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: 'a' }
+info [Tue Apr 12 2022 13:32:39 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:39 GMT+0800 (China Standard Time)]  { blogs: [], count: 0, message: '' }
+info [Tue Apr 12 2022 13:32:43 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=1
+info [Tue Apr 12 2022 13:32:43 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:43 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '1' }
+info [Tue Apr 12 2022 13:32:43 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:43 GMT+0800 (China Standard Time)]  { blogs: [], count: 2, message: '' }
+info [Tue Apr 12 2022 13:32:45 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:45 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:45 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:45 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:45 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=2&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '2', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 16,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title6',
+      text: 'Title6',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 17,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title with Image 1',
+      text: 'Title with Image 1',
+      imageUrl: './uploads/994ed6ff-0392-4bd8-ad04-468b8f9575b7-sam-wood.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 18,
+      userId: 13,
+      username: 'Test User',
+      title: 'Image with Title 2',
+      text: 'Image with Title 2',
+      imageUrl: './uploads/7b1c746b-557b-455f-a79d-ed4a0470e1f5-erin-rull.png',
+      like: 0
+    },
+    RowDataPacket {
+      id: 19,
+      userId: 13,
+      username: 'Test User',
+      title: 'asdf',
+      text: 'asdf',
+      imageUrl: './uploads/fdbaabde-2c46-4f1c-b298-0e7c12b92987-lin-yong-zu.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 20,
+      userId: 13,
+      username: 'Test User',
+      title: 'QWER',
+      text: 'QWER',
+      imageUrl: './uploads/c09973a8-749c-4fbd-a343-2c8368603bb7-vali-stirbei.png',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:32:51 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=0&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '0', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  Error: Only positive integers are allowed when offseting SQL results!
+    at Single._prepare_for_limit_and_offset (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\query_builder.js:117:22)
+    at Single.offset (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\query_builder.js:1040:34)
+    at Object.readMainBlogs (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\blogs.service.js:48:14)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async readBlogs (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\controllers\blogs.controller.js:80:23)
+info [Tue Apr 12 2022 13:33:46 GMT+0800 (China Standard Time)]  { message: 'Unknown Error occured! Please contact with Manager!' }
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  Error: ER_NONUNIQ_TABLE: Not unique table/alias: 'blogs'
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readMainBlogsCount (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\blogs.service.js:22:14)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_NONUNIQ_TABLE',
+  errno: 1066,
+  sqlMessage: "Not unique table/alias: 'blogs'",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT `blogs`.`id`, `blogs`.`userId` AS `userId`, `users`.`username`, `blogs`.`title`, `blogs`.`text`, `blogs`.`imageUrl`, COUNT(likes.blogId) AS `like`, COUNT (*) AS `count` FROM `blogs`, `blogs` JOIN `users` ON `blogs`.`userId` = `users`.`id` LEFT JOIN `likes` ON `blogs`.`id` = `likes`.`blogId` LEFT JOIN `comments` ON `blogs`.`id` = `comments`.`commentBlogId` LEFT JOIN `comments` ON `blogs`.`id` = `comments`.`commentBlogId` WHERE `comments`.`createdAt` is NULL AND `blogs`.`title` LIKE '%%' AND `comments`.`createdAt` is NULL AND `blogs`.`title` LIKE '%%' GROUP BY `blogs`.`id`"
+}
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  { message: 'Unknown Error occured! Please contact with Manager!' }
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=2&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '2', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:48 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 16,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title6',
+      text: 'Title6',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 17,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title with Image 1',
+      text: 'Title with Image 1',
+      imageUrl: './uploads/994ed6ff-0392-4bd8-ad04-468b8f9575b7-sam-wood.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 18,
+      userId: 13,
+      username: 'Test User',
+      title: 'Image with Title 2',
+      text: 'Image with Title 2',
+      imageUrl: './uploads/7b1c746b-557b-455f-a79d-ed4a0470e1f5-erin-rull.png',
+      like: 0
+    },
+    RowDataPacket {
+      id: 19,
+      userId: 13,
+      username: 'Test User',
+      title: 'asdf',
+      text: 'asdf',
+      imageUrl: './uploads/fdbaabde-2c46-4f1c-b298-0e7c12b92987-lin-yong-zu.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 20,
+      userId: 13,
+      username: 'Test User',
+      title: 'QWER',
+      text: 'QWER',
+      imageUrl: './uploads/c09973a8-749c-4fbd-a343-2c8368603bb7-vali-stirbei.png',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:49 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:49 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:49 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:49 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:49 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:50 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:50 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:50 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:50 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:50 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:51 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=0&itemCount=5&title=
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '0', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  Error: Only positive integers are allowed when offseting SQL results!
+    at Single._prepare_for_limit_and_offset (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\query_builder.js:117:22)
+    at Single.offset (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\query_builder.js:1040:34)
+    at Object.readMainBlogs (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\blogs.service.js:48:14)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async readBlogs (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\controllers\blogs.controller.js:80:23)
+info [Tue Apr 12 2022 13:33:56 GMT+0800 (China Standard Time)]  { message: 'Unknown Error occured! Please contact with Manager!' }
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  Unknown Error occured! Please contact with Manager!
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  Error: ER_NONUNIQ_TABLE: Not unique table/alias: 'blogs'
+    at Query.Sequence._packetToError (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:400:28)
+    at addChunk (internal/streams/readable.js:293:12)
+    --------------------
+    at Protocol._enqueue (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\mysql\lib\Connection.js:198:25)
+    at Single._exec (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:15:30)
+    at WrapperPromise.invoke (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:32:14)
+    at F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:24:18
+    at new Promise (<anonymous>)
+    at WrapperPromise.promisify (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\WrapperPromise.js:21:16)
+    at Single.get (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\node_modules\node-querybuilder\drivers\mysql\query_exec.js:86:93)
+    at Object.readMainBlogsCount (F:\Web Projects\React.js Projects\Test Blog for Beaumont\Server\server\services\blogs.service.js:22:14)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  code: 'ER_NONUNIQ_TABLE',
+  errno: 1066,
+  sqlMessage: "Not unique table/alias: 'blogs'",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT `blogs`.`id`, `blogs`.`userId` AS `userId`, `users`.`username`, `blogs`.`title`, `blogs`.`text`, `blogs`.`imageUrl`, COUNT(likes.blogId) AS `like`, COUNT (*) AS `count` FROM `blogs`, `blogs` JOIN `users` ON `blogs`.`userId` = `users`.`id` LEFT JOIN `likes` ON `blogs`.`id` = `likes`.`blogId` LEFT JOIN `comments` ON `blogs`.`id` = `comments`.`commentBlogId` LEFT JOIN `comments` ON `blogs`.`id` = `comments`.`commentBlogId` WHERE `comments`.`createdAt` is NULL AND `blogs`.`title` LIKE '%%' AND `comments`.`createdAt` is NULL AND `blogs`.`title` LIKE '%%' GROUP BY `blogs`.`id`"
+}
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  { message: 'Unknown Error occured! Please contact with Manager!' }
+info [Tue Apr 12 2022 13:34:37 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:35:53 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:36:12 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:36:12 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:36:12 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:36:12 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:36:12 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=aa
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: 'aa' }
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  { blogs: [], count: 0, message: '' }
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=aa
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: 'aa' }
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:36:15 GMT+0800 (China Standard Time)]  { blogs: [], count: 0, message: '' }
+info [Tue Apr 12 2022 13:36:19 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:36:19 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:36:19 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:36:19 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:36:19 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:39:05 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:39:06 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:39:06 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:40:13 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:40:13 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:40:13 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:40:13 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:40:13 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:42:19 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:42:19 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:42:19 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:42:19 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:42:19 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:10 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:10 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:10 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:10 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:10 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:16 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/upload/image
+info [Tue Apr 12 2022 13:43:16 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:16 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:16 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:17 GMT+0800 (China Standard Time)]  {
+  imageUrls: [ './uploads/ed7fb6fe-e8b9-4c65-9c6c-4b45358f3340-thomas-tan.png' ],
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:19 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:19 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:19 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:19 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:19 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/auth/signin
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  BODY: { email: 'test@gmail.com', password: '1234' }
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  {
+  userId: 13,
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY0OTc0MjIwOSwiZXhwIjoxNjQ5NzQ1ODA5fQ.sYfkLzosQf16apmth1cU4o15vDgs95Bsxw9dfw2hK_I',
+  expirationTime: 3600,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:29 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:33 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:33 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:33 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:33 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:33 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:36 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=2&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:36 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:36 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '2', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:36 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:36 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 16,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title6',
+      text: 'Title6',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 17,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title with Image 1',
+      text: 'Title with Image 1',
+      imageUrl: './uploads/994ed6ff-0392-4bd8-ad04-468b8f9575b7-sam-wood.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 18,
+      userId: 13,
+      username: 'Test User',
+      title: 'Image with Title 2',
+      text: 'Image with Title 2',
+      imageUrl: './uploads/7b1c746b-557b-455f-a79d-ed4a0470e1f5-erin-rull.png',
+      like: 0
+    },
+    RowDataPacket {
+      id: 19,
+      userId: 13,
+      username: 'Test User',
+      title: 'asdf',
+      text: 'asdf',
+      imageUrl: './uploads/fdbaabde-2c46-4f1c-b298-0e7c12b92987-lin-yong-zu.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 20,
+      userId: 13,
+      username: 'Test User',
+      title: 'QWER',
+      text: 'QWER',
+      imageUrl: './uploads/c09973a8-749c-4fbd-a343-2c8368603bb7-vali-stirbei.png',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:37 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=3&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:37 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:37 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '3', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:37 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:37 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 21,
+      userId: 13,
+      username: 'Test User',
+      title: 'qq',
+      text: 'qq',
+      imageUrl: './uploads/89e959c1-c309-4c66-98e1-43aa3c42f79d-sam-wood.jpg',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:39 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=2&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:39 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:39 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '2', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:39 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:39 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 16,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title6',
+      text: 'Title6',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 17,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title with Image 1',
+      text: 'Title with Image 1',
+      imageUrl: './uploads/994ed6ff-0392-4bd8-ad04-468b8f9575b7-sam-wood.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 18,
+      userId: 13,
+      username: 'Test User',
+      title: 'Image with Title 2',
+      text: 'Image with Title 2',
+      imageUrl: './uploads/7b1c746b-557b-455f-a79d-ed4a0470e1f5-erin-rull.png',
+      like: 0
+    },
+    RowDataPacket {
+      id: 19,
+      userId: 13,
+      username: 'Test User',
+      title: 'asdf',
+      text: 'asdf',
+      imageUrl: './uploads/fdbaabde-2c46-4f1c-b298-0e7c12b92987-lin-yong-zu.jpg',
+      like: 0
+    },
+    RowDataPacket {
+      id: 20,
+      userId: 13,
+      username: 'Test User',
+      title: 'QWER',
+      text: 'QWER',
+      imageUrl: './uploads/c09973a8-749c-4fbd-a343-2c8368603bb7-vali-stirbei.png',
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:40 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blogs?pageIndex=1&itemCount=5&title=
+info [Tue Apr 12 2022 13:43:40 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:40 GMT+0800 (China Standard Time)]  QUERY: { pageIndex: '1', itemCount: '5', title: '' }
+info [Tue Apr 12 2022 13:43:40 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:40 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      like: 2
+    },
+    RowDataPacket {
+      id: 6,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title2',
+      text: 'Title2',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 7,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title3',
+      text: 'Title3',
+      imageUrl: null,
+      like: 0
+    },
+    RowDataPacket {
+      id: 8,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title4',
+      text: 'Title4',
+      imageUrl: null,
+      like: 1
+    },
+    RowDataPacket {
+      id: 15,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title5',
+      text: 'Title5',
+      imageUrl: null,
+      like: 0
+    }
+  ],
+  count: 11,
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:41 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/blog/5
+info [Tue Apr 12 2022 13:43:41 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:41 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:41 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:41 GMT+0800 (China Standard Time)]  {
+  blogs: [
+    RowDataPacket {
+      id: 5,
+      userId: 13,
+      username: 'Test User',
+      title: 'Title12',
+      text: '11',
+      imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+      mainBlogId: 5,
+      like: 2
+    },
+    RowDataPacket {
+      id: 14,
+      userId: 14,
+      username: 'Test1',
+      title: 'Comment2 to Title2',
+      text: 'Comment2 to Title2',
+      imageUrl: null,
+      mainBlogId: 5,
+      like: 2
+    }
+  ],
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:43 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:43:43 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:43 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:43 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:43 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:50 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:43:59 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:58:55 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:58:55 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:58:55 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:58:55 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:58:55 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:01 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:10 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:28 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:59:28 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:28 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:28 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:28 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 13:59:36 GMT+0800 (China Standard Time)]  {
+  user: RowDataPacket {
+    id: 13,
+    username: 'Test User',
+    email: 'test@gmail.com',
+    photoUrl: './uploads/f3975bba-aed4-4ff4-85a6-83be6e4a9b98-thomas-tan.png'
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 14:00:18 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/blogs/certainBlog/5
+info [Tue Apr 12 2022 14:00:18 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 14:00:18 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 14:00:18 GMT+0800 (China Standard Time)]  BODY: {}
+info [Tue Apr 12 2022 14:00:18 GMT+0800 (China Standard Time)]  {
+  blog: RowDataPacket {
+    id: 5,
+    userId: 13,
+    username: 'Test User',
+    title: 'Title12',
+    text: '11',
+    imageUrl: './uploads/9d8b09b7-8d73-460d-bfea-277de98f9ccd-sam-wood.jpg',
+    mainBlogId: 5,
+    like: 2
+  },
+  message: ''
+}
+info [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Tue Apr 12 2022 14:08:17 GMT+0800 (China Standard Time)]  { message: 'Unauthorized! Please log in!' }
+
+info [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  URL: http://localhost:8080/api/v1/users/me
+info [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  PARAMS: {}
+info [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  QUERY: {}
+info [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  BODY: {}
+error [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  Error occured:  Unauthorized! Please log in!
+info [Tue Apr 12 2022 15:56:57 GMT+0900 (Japan Standard Time)]  { message: 'Unauthorized! Please log in!' }

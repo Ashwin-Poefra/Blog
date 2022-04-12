@@ -4,8 +4,6 @@ const { DEBUG } = require("../config");
 // utils
 const LOGGER = require("./logger");
 
-// const { LOGGER } = require("./logger");
-
 const routeMiddleware = (req, res, next) => {
     if (DEBUG.REQUEST_SHOW) {
         console.group("/----------------New Request---------------/");
