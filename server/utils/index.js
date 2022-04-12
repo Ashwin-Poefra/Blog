@@ -4,6 +4,7 @@ const ROUTE_MIDDLEWARE = require("./routeMiddleware");
 const DATABASE = require("./mysqlConnector");
 const errorHandler = require("./errorHandler");
 const checkAuth = require("./checkAuth");
+const imageUploader = require("./imageUploader");
 
 module.exports = {
     Response,
@@ -12,4 +13,5 @@ module.exports = {
     DATABASE,
     errorHandler,
     checkAuth,
+    imageUploader,
 };

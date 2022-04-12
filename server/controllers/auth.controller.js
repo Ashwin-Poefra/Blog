@@ -50,7 +50,28 @@ const signin = async (req, res, next) => {
 };
 
 const signinGoogle = async (req, res, next) => {
-    Response(res, 401, "asdf");
+    try {
+        const { email, ...rest } = req.body;
+        const [user] = await userService.readUsersPassword({
+            email,
+        });
+
+        if (user) {
+            const token = jwt.sign({ id: user.id }, JWT_TOKEN, {
+                expiresIn: EXPIRATION_TIME,
+            });
+
+            Response(res, 200, {
+                userId: user.id,
+                token,
+                expirationTime: EXPIRATION_TIME,
+            });
+        } else {
+            errorHandler(res, ERRORS.EMAIL_NOT_EXIST.code);
+        }
+    } catch (error) {
+        errorHandler(res, error);
+    }
 };
 
 const signup = async (req, res, next) => {
@@ -88,28 +109,8 @@ const signup = async (req, res, next) => {
     }
 };
 
-const me = async (req, res, next) => {
-    try {
-        const userId = req.user.id;
-        const [user] = await userService.readUsers({
-            id: userId,
-        });
-
-        if (user) {
-            Response(res, 200, {
-                user,
-            });
-        } else {
-            errorHandler(res, ERRORS.USER_NOT_EXIST);
-        }
-    } catch (error) {
-        errorHandler(res, error);
-    }
-};
-
 module.exports = {
     signin,
     signinGoogle,
     signup,
-    me,
 };

@@ -39,4 +39,8 @@ module.exports = {
         code: 10,
         status: 402,
     },
+    OLD_PASSWORD_NOT_CORRECT: {
+        code: 11,
+        status: 402,
+    },
 };

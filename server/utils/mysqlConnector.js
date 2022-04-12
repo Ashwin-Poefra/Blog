@@ -3,9 +3,27 @@ const QueryBuilder = require("node-querybuilder");
 
 // config
 const { DATABASE_CONFIG } = require("../config");
+function MYSQL(config) {
+    this.queryBuilder = new QueryBuilder(config, "mysql", "pool");
+    this.connection = undefined;
+}
 
-// const CONNECTION = new QueryBuilder(DATABASE_CONFIG, "mysql", "pool");
-// const DATABASE = await CONNECTION.get_connection();
-const DATABASE = new QueryBuilder(DATABASE_CONFIG, "mysql", "pool");
+MYSQL.prototype.getConnection = async function () {
+    try {
+        if (!this.connection) {
+            this.connection = await this.queryBuilder.get_connection();
+        }
 
-module.exports = DATABASE;
+        this.connection._connection.on("error", (error) => {
+            if (error.code === "PROTOCOL_CONNECTION_LOST") {
+                this.connection = undefined;
+            }
+        });
+    } catch (error) {
+        console.log(error);
+    }
+
+    return this.connection;
+};
+
+module.exports = new MYSQL(DATABASE_CONFIG);

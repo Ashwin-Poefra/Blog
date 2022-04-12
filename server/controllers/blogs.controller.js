@@ -72,12 +72,20 @@ const createComment = async (req, res, next) => {
 
 const readBlogs = async (req, res, next) => {
     try {
-        const {} = req.body;
+        const pageIndex = req.query.pageIndex ? Number(req.query.pageIndex) : 1;
+        const itemCount = req.query.itemCount ? Number(req.query.itemCount) : 5;
+        const title = req.query.title ? Number(req.query.title) : "";
 
-        const blogs = await blogsService.readMainBlogs({});
+        const [blogsCount] = await blogsService.readMainBlogsCount(title);
+        const blogs = await blogsService.readMainBlogs(
+            pageIndex,
+            itemCount,
+            title
+        );
 
         Response(res, 200, {
             blogs,
+            count: blogsCount.count,
         });
     } catch (error) {
         errorHandler(res, error);
@@ -92,6 +100,20 @@ const readBlog = async (req, res, next) => {
 
         Response(res, 200, {
             blogs,
+        });
+    } catch (error) {
+        errorHandler(res, error);
+    }
+};
+
+const readCertainBlog = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        const [blog] = await blogsService.readCertainBlog(id);
+
+        Response(res, 200, {
+            blog,
         });
     } catch (error) {
         errorHandler(res, error);
@@ -133,16 +155,16 @@ const thumbupBlog = async (req, res, next) => {
 
 const updateBlog = async (req, res, next) => {
     try {
-        // const { title, text, imageUrl, ...rest } = req.body;
+        const { id } = req.params;
+        const { title, text, imageUrl, ...rest } = req.body;
 
-        // await blogsService.readBlogs({
-        //     userId: req.user.id,
-        //     username,
-        //     email,
-        //     password: userPassword,
-        // });
+        await blogsService.updateBlog(id, {
+            title,
+            text,
+            imageUrl,
+        });
 
-        Response(res, 200, {});
+        Response(res, 200, {}, MESSAGES.UPDATE_BLOG_SUCCESS);
     } catch (error) {
         errorHandler(res, error);
     }
@@ -150,16 +172,11 @@ const updateBlog = async (req, res, next) => {
 
 const deleteBlog = async (req, res, next) => {
     try {
-        // const { title, text, imageUrl, ...rest } = req.body;
+        const { id } = req.params;
 
-        // await blogsService.readBlogs({
-        //     userId: req.user.id,
-        //     username,
-        //     email,
-        //     password: userPassword,
-        // });
+        await blogsService.deleteBlog(id);
 
-        Response(res, 200, {});
+        Response(res, 200, {}, MESSAGES.DELETE_BLOG_SUCCESS);
     } catch (error) {
         errorHandler(res, error);
     }
@@ -170,6 +187,7 @@ module.exports = {
     createComment,
     readBlogs,
     readBlog,
+    readCertainBlog,
     thumbupBlog,
     updateBlog,
     deleteBlog,

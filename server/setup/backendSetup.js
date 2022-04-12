@@ -16,10 +16,7 @@ const appRoutes = require("../routes");
 const { ROUTE_MIDDLEWARE } = require("../utils");
 
 const backendSetup = (app) => {
-    app.use(
-        "/uploads",
-        express.static(path.join(__dirname, "../", UPLOAD_URL))
-    );
+    app.use("/uploads", express.static(UPLOAD_URL));
 
     app.use(express.json());
     app.use(cors());

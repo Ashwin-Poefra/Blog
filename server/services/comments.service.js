@@ -3,12 +3,10 @@ const { DATABASE } = require("../utils");
 
 const createComment = async (commentData) => {
     try {
-        console.log(commentData);
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.returning("id").insert(
-            "comments",
-            commentData
-        );
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector
+            .returning("id")
+            .insert("comments", commentData);
     } catch (error) {
         throw error;
     }
@@ -16,8 +14,9 @@ const createComment = async (commentData) => {
 
 const readComments = async (commentData) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.select(["blogs.id"])
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector
+            .select(["blogs.id"])
             .from("comments")
             .join("blogs", "comments.commentBlogId = blogs.id", "right")
             .where({

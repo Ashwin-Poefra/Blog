@@ -3,8 +3,8 @@ const { DATABASE } = require("../utils");
 
 const createUser = async (userData) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.returning("id").insert("users", userData);
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector.returning("id").insert("users", userData);
     } catch (error) {
         throw error;
     }
@@ -12,13 +12,9 @@ const createUser = async (userData) => {
 
 const readUsers = async (userData) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.select([
-            "id",
-            "username",
-            "email",
-            "photoUrl",
-        ])
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector
+            .select(["id", "username", "email", "photoUrl"])
             .where(userData)
             .get("users");
     } catch (error) {
@@ -28,8 +24,9 @@ const readUsers = async (userData) => {
 
 const readUsersPassword = async (userData) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.select(["id", "password"])
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector
+            .select(["id", "password"])
             .where(userData)
             .get("users");
     } catch (error) {
@@ -39,8 +36,8 @@ const readUsersPassword = async (userData) => {
 
 const updateUser = async (id, userData) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.where({ id }).from("users").set({ userData });
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector.where({ id }).set(userData).update("users");
     } catch (error) {
         throw error;
     }
@@ -48,8 +45,9 @@ const updateUser = async (id, userData) => {
 
 const deleteUser = async (id) => {
     try {
-        const QueryBuilder = await DATABASE.get_connection();
-        return await QueryBuilder.where({ id })
+        const dbConnector = await DATABASE.getConnection();
+        return await dbConnector
+            .where({ id })
             .from("users")
             .set({ deletedAt: new Date() });
     } catch (error) {

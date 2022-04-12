@@ -10,6 +10,8 @@ module.exports = {
     // Success Messages
     NEW_BLOG_CREATE_SUCCESS: "Your blog is saved successfully!",
     COMMENT_CREATE_SUCCESS: "Your comment is saved successfully!",
+    UPDATE_BLOG_SUCCESS: "Your blog is updated successfully!",
+    DELETE_BLOG_SUCCESS: "Your blog is deleted successfully!",
 
     // Errors Messages
     EMAIL_DUPLICATED: "Email duplicated! Please use another one!",
@@ -23,6 +25,7 @@ module.exports = {
         "You comment to this blog before. Can't do it again!",
     COMMENT_MYSELF: "You can't comment to your blog yourself!",
     BLOG_NOT_EXIST: "Blog is not exist!",
+    OLD_PASSWORD_NOT_CORRECT: "Old passwird is not correct!",
 
     UNKNOWN_ERROR: "Unknown Error occured! Please contact with Manager!",
 };

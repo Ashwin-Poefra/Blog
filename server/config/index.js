@@ -3,7 +3,7 @@ const { JWT_TOKEN, EXPIRATION_TIME } = require("./jwt_token");
 const DATABASE_CONFIG = require("./database");
 
 const PORT = 8080;
-const UPLOAD_URL = "/uploads";
+const UPLOAD_URL = "./uploads";
 
 const DEBUG = {
     REQUEST_SHOW: true,
