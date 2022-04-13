@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 100419
  Source Host           : localhost:3306
- Source Schema         : test-blog
+ Source Schema         : testBlog
 
  Target Server Type    : MySQL
  Target Server Version : 100419
@@ -16,6 +16,24 @@
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+
+-- ----------------------------
+-- Table structure for users
+-- ----------------------------
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `password` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `photoUrl` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+  `google` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+  `createdAt` datetime(0) NOT NULL DEFAULT current_timestamp(0),
+  `updatedAt` datetime(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0),
+  `deletedAt` datetime(0) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for blogs
@@ -70,22 +88,5 @@ CREATE TABLE `likes`  (
   CONSTRAINT `Likes Blog Id` FOREIGN KEY (`blogId`) REFERENCES `blogs` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT,
   CONSTRAINT `Likes User Id` FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for users
--- ----------------------------
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users`  (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `username` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `password` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `photoUrl` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  `google` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  `createdAt` datetime(0) NOT NULL DEFAULT current_timestamp(0),
-  `updatedAt` datetime(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0),
-  `deletedAt` datetime(0) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
