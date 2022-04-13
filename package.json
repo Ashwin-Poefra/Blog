@@ -20,7 +20,8 @@
         "oauth": "^0.9.14",
         "path": "^0.12.7",
         "querybuilder": "^1.1.0",
-        "squel": "^5.13.0"
+        "squel": "^5.13.0",
+        "uuid": "^8.3.2"
     },
     "author": "Mr Dev: Furuya Nobuo",
     "license": "ISC"
