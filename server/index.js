@@ -6,9 +6,9 @@ const { backendSetup, databaseSetup } = require("./setup");
 
 const app = express();
 
-databaseSetup(() => {
-    // backendSetup(app);
-});
+// databaseSetup(() => {
+//     // backendSetup(app);
+// });
 
 app.listen(8080, () => {
     console.log("app listening");
