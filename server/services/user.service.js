@@ -49,10 +49,11 @@ const updateUser = async (id, userData) => {
 const deleteUser = async (id) => {
     try {
         const dbConnector = await DATABASE.getConnection();
+        console.log(moment(new Date()));
         return await dbConnector
             .where({ id })
             .set({
-                deletedAt: new Date(),
+                deletedAt: moment(new Date()),
             })
             .update("users");
     } catch (error) {
