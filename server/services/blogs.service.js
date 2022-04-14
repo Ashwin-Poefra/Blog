@@ -56,29 +56,82 @@ const readMainBlogs = async (pageIndex, itemCount, title) => {
 const readCertainBlogs = async (id) => {
     try {
         const dbConnector = await DATABASE.getConnection();
+        console.log(
+            dbConnector
+                .select([
+                    "blogs.id",
+                    "blogs.userId AS `userId`",
+                    "users.username",
+                    "blogs.title",
+                    "blogs.text",
+                    "blogs.imageUrl",
+                    "comments.mainBlogId",
+                    "COUNT(likes.blogId) AS `like`",
+                ])
+                .from("blogs")
+                .join("users", "blogs.userId = users.id")
+                .join("likes", "blogs.id = likes.blogId", "left")
+                .join(
+                    "comments",
+                    "blogs.id = comments.commentBlogId OR blogs.id = comments.mainBlogId",
+                    "left"
+                )
+                .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
+                .order_by("blogs.createdAt")
+                .get_compiled_select()
+        );
+
         return await dbConnector
-            .select([
-                "blogs.id",
-                "blogs.userId AS `userId`",
-                "users.username",
-                "blogs.title",
-                "blogs.text",
-                "blogs.imageUrl",
-                "comments.mainBlogId",
-                "COUNT(likes.blogId) AS `like`",
-            ])
-            .from("blogs")
-            .join("users", "blogs.userId = users.id")
-            .join("likes", "blogs.id = likes.blogId", "left")
-            .join(
-                "comments",
-                "blogs.id = comments.commentBlogId OR blogs.id = comments.mainBlogId",
-                "left"
+            .select(["A.*", "COUNT(A.blogId) as `like`"])
+            .from(
+                dbConnector
+                    .select([
+                        "blogs.id",
+                        "blogs.userId AS `userId`",
+                        "users.username",
+                        "blogs.title",
+                        "blogs.text",
+                        "blogs.imageUrl",
+                        "comments.mainBlogId",
+                        "likes.blogId AS blogId",
+                    ])
+                    .from("blogs")
+                    .join("users", "blogs.userId = users.id")
+                    .join("likes", "blogs.id = likes.blogId", "left")
+                    .join(
+                        "comments",
+                        "blogs.id = comments.commentBlogId OR blogs.id = comments.mainBlogId",
+                        "left"
+                    )
+                    .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
+                    .order_by("blogs.createdAt")
+                    .get_compiled_select() + "AS A"
             )
-            .group_by("blogs.id")
-            .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
-            .order_by("blogs.createdAt")
+            .group_by("A.id")
             .get();
+        // return await dbConnector
+        //     .select([
+        //         "blogs.id",
+        //         "blogs.userId AS `userId`",
+        //         "users.username",
+        //         "blogs.title",
+        //         "blogs.text",
+        //         "blogs.imageUrl",
+        //         "comments.mainBlogId",
+        //         "COUNT(likes.blogId) AS `like`",
+        //     ])
+        //     .from("blogs")
+        //     .join("users", "blogs.userId = users.id")
+        //     .join("likes", "blogs.id = likes.blogId", "left")
+        //     .join(
+        //         "comments",
+        //         "blogs.id = comments.commentBlogId OR blogs.id = comments.mainBlogId",
+        //         "left"
+        //     )
+        //     .group_by("blogs.id")
+        //     .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
+        //     .order_by("blogs.createdAt")
+        //     .get();
     } catch (error) {
         throw error;
     }
