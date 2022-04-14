@@ -1,3 +1,6 @@
+// node_modules
+const moment = require("moment");
+
 // utils
 const { DATABASE } = require("../utils");
 
@@ -117,7 +120,7 @@ const updateBlog = async (id, blogData) => {
             .where({ id })
             .set({
                 ...blogData,
-                updatedAt: new Date(),
+                updatedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
             })
             .update("blogs");
     } catch (error) {
@@ -130,8 +133,10 @@ const deleteBlog = async (id) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .where({ id })
-            .from("Blogs")
-            .set({ deletedAt: new Date() });
+            .from("blogs")
+            .set({
+                deletedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
+            });
     } catch (error) {
         throw error;
     }
