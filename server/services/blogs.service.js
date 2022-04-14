@@ -20,6 +20,7 @@ const readMainBlogsCount = async (title) => {
             .select(["COUNT (*) as count"])
             .join("comments", "blogs.id = comments.commentBlogId", "left")
             .where("comments.createdAt is NULL")
+            .where("blogs.deletedAt is null")
             .like("blogs.title", `%${title}%`, "none")
             .get("blogs");
     } catch (error) {
@@ -45,6 +46,7 @@ const readMainBlogs = async (pageIndex, itemCount, title) => {
             .join("comments", "blogs.id = comments.commentBlogId", "left")
             .group_by("blogs.id")
             .where("comments.createdAt is NULL")
+            .where("blogs.deletedAt is null")
             .like("blogs.title", `%${title}%`, "none")
             .offset((pageIndex - 1) * itemCount)
             .limit(itemCount)
@@ -77,6 +79,7 @@ const readCertainBlogs = async (id) => {
             )
             .group_by("blogs.id")
             .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
+            .where("blogs.deletedAt is null")
             .order_by("blogs.createdAt")
             .get("blogs");
     } catch (error) {
@@ -90,6 +93,7 @@ const readCertainBlog = async (id) => {
         return await dbConnector
             .select(["*"])
             .where(`blogs.id = ${id}`)
+            .where("blogs.deletedAt is null")
             .get("blogs");
     } catch (error) {
         throw error;
@@ -102,6 +106,7 @@ const readBlogs = async (id) => {
         return await dbConnector
             .select("*")
             .where({ "blogs.id": id })
+            .where("blogs.deletedAt is null")
             .get("blogs");
     } catch (error) {
         throw error;
