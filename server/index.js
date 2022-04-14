@@ -1,9 +1,9 @@
 // node_modules
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 
 // setups
-const { backendSetup, databaseSetup } = require("./setup");
+// const { backendSetup, databaseSetup } = require("./setup");
 
 const app = express();
 
