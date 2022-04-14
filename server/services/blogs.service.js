@@ -128,10 +128,10 @@ const deleteBlog = async (id) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .where({ "blogs.id": id })
-            .from("blogs")
             .set({
                 deletedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
-            });
+            })
+            .update("blogs");
     } catch (error) {
         throw error;
     }
