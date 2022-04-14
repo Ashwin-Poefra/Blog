@@ -17,13 +17,12 @@ const readComments = async (commentData) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .select(["blogs.id"])
-            .from("comments")
             .join("blogs", "comments.commentBlogId = blogs.id", "right")
             .where({
                 "comments.mainBlogId": commentData.mainBlogId,
                 "blogs.userId": commentData.userId,
             })
-            .get();
+            .get("comments");
     } catch (error) {
         throw error;
     }

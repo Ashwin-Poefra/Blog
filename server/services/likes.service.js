@@ -13,11 +13,7 @@ const createLike = async (likeData) => {
 const readLikes = async (likeData) => {
     try {
         const dbConnector = await DATABASE.getConnection();
-        return await dbConnector
-            .select(["id"])
-            .from("likes")
-            .where(likeData)
-            .get();
+        return await dbConnector.select(["id"]).where(likeData).get("likes");
     } catch (error) {
         throw error;
     }
