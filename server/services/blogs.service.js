@@ -88,27 +88,9 @@ const readCertainBlog = async (id) => {
     try {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
-            .select([
-                "blogs.id",
-                "blogs.userId AS `userId`",
-                "users.username",
-                "blogs.title",
-                "blogs.text",
-                "blogs.imageUrl",
-                "comments.mainBlogId",
-                "COUNT(likes.blogId) AS `like`",
-            ])
+            .select(["*"])
             .from("blogs")
-            .join("users", "blogs.userId = users.id")
-            .join("likes", "blogs.id = likes.blogId", "left")
-            .join(
-                "comments",
-                "blogs.id = comments.commentBlogId OR blogs.id = comments.mainBlogId",
-                "left"
-            )
-            .group_by("blogs.id")
             .where(`blogs.id = ${id}`)
-            .order_by("blogs.createdAt")
             .get();
     } catch (error) {
         throw error;
