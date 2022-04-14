@@ -128,6 +128,8 @@ const updateBlog = async (id, blogData) => {
 const deleteBlog = async (id) => {
     try {
         const dbConnector = await DATABASE.getConnection();
+        console.log(moment(new Date()));
+        console.log(moment(new Date()).format("YYYY-MM-DD HH:MM:SS"));
         return await dbConnector
             .where({ "blogs.id": id })
             .set({
