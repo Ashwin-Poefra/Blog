@@ -18,11 +18,10 @@ const readMainBlogsCount = async (title) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .select(["COUNT (*) as count"])
-            .from("blogs")
             .join("comments", "blogs.id = comments.commentBlogId", "left")
             .where("comments.createdAt is NULL")
             .like("blogs.title", `%${title}%`, "none")
-            .get();
+            .get("blogs");
     } catch (error) {
         throw error;
     }
@@ -41,7 +40,6 @@ const readMainBlogs = async (pageIndex, itemCount, title) => {
                 "blogs.imageUrl",
                 "COUNT(likes.blogId) AS `like`",
             ])
-            .from("blogs")
             .join("users", "blogs.userId = users.id")
             .join("likes", "blogs.id = likes.blogId", "left")
             .join("comments", "blogs.id = comments.commentBlogId", "left")
@@ -50,7 +48,7 @@ const readMainBlogs = async (pageIndex, itemCount, title) => {
             .like("blogs.title", `%${title}%`, "none")
             .offset((pageIndex - 1) * itemCount)
             .limit(itemCount)
-            .get();
+            .get("blogs");
     } catch (error) {
         throw error;
     }
@@ -70,7 +68,6 @@ const readCertainBlogs = async (id) => {
                 "MIN(comments.mainBlogId) as mainBlogId",
                 "COUNT( likes.blogId ) AS `like`",
             ])
-            .from("blogs")
             .join("users", "blogs.userId = users.id")
             .join("likes", "blogs.id = likes.blogId", "left")
             .join(
@@ -81,7 +78,7 @@ const readCertainBlogs = async (id) => {
             .group_by("blogs.id")
             .where(`comments.mainBlogId = ${id} OR blogs.id = ${id}`)
             .order_by("blogs.createdAt")
-            .get();
+            .get("blogs");
     } catch (error) {
         throw error;
     }
@@ -92,9 +89,8 @@ const readCertainBlog = async (id) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .select(["*"])
-            .from("blogs")
             .where(`blogs.id = ${id}`)
-            .get();
+            .get("blogs");
     } catch (error) {
         throw error;
     }
@@ -105,9 +101,8 @@ const readBlogs = async (id) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .select("*")
-            .from("blogs")
             .where({ "blogs.id": id })
-            .get();
+            .get("blogs");
     } catch (error) {
         throw error;
     }
@@ -117,7 +112,7 @@ const updateBlog = async (id, blogData) => {
     try {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
-            .where({ id })
+            .where({ "blogs.id": id })
             .set({
                 ...blogData,
                 updatedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
@@ -132,7 +127,7 @@ const deleteBlog = async (id) => {
     try {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
-            .where({ id })
+            .where({ "blogs.id": id })
             .from("blogs")
             .set({
                 deletedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
