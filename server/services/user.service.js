@@ -40,13 +40,7 @@ const readUsersPassword = async (userData) => {
 const updateUser = async (id, userData) => {
     try {
         const dbConnector = await DATABASE.getConnection();
-        return await dbConnector
-            .where({ id })
-            .set({
-                ...userData,
-                updatedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
-            })
-            .update("users");
+        return await dbConnector.where({ id }).set(userData).update("users");
     } catch (error) {
         throw error;
     }
@@ -58,7 +52,7 @@ const deleteUser = async (id) => {
         return await dbConnector
             .where({ id })
             .set({
-                deletedAt: moment(new Date()).format("YYYY-MM-DD HH:MM:SS"),
+                deletedAt: moment(new Date()),
             })
             .update("users");
     } catch (error) {

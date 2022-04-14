@@ -118,10 +118,7 @@ const updateBlog = async (id, blogData) => {
         const dbConnector = await DATABASE.getConnection();
         return await dbConnector
             .where({ "blogs.id": id })
-            .set({
-                ...blogData,
-                updatedAt: moment(new Date()).format("YYYY-MM-DD HH:MM:SS"),
-            })
+            .set(blogData)
             .update("blogs");
     } catch (error) {
         throw error;
@@ -134,7 +131,7 @@ const deleteBlog = async (id) => {
         return await dbConnector
             .where({ "blogs.id": id })
             .set({
-                deletedAt: moment(new Date()).format("YYYY-MM-DD HH:MM:SS"),
+                deletedAt: moment(new Date()),
             })
             .update("blogs");
     } catch (error) {
