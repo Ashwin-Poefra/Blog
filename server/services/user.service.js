@@ -52,7 +52,7 @@ const deleteUser = async (id) => {
         return await dbConnector
             .where({ id })
             .set({
-                deletedAt: moment(new Date()),
+                deletedAt: new Date(),
             })
             .update("users");
     } catch (error) {
