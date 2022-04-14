@@ -58,7 +58,7 @@ const deleteUser = async (id) => {
         return await dbConnector
             .where({ id })
             .set({
-                deletedAt: moment(new Date()).format("YYYY/MM/DD HH:MM:SS"),
+                deletedAt: moment(new Date()).format("YYYY-MM-DD HH:MM:SS"),
             })
             .update("users");
     } catch (error) {
