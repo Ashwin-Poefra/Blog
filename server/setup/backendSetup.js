@@ -15,6 +15,8 @@ const appRoutes = require("../routes");
 // middleware
 const { ROUTE_MIDDLEWARE } = require("../utils");
 
+const port = process.env.PORT || 3000;
+
 const backendSetup = (app) => {
     app.use("/uploads", express.static(UPLOAD_URL));
 
@@ -25,7 +27,7 @@ const backendSetup = (app) => {
 
     app.use(`/api/${ROUTE_VERSION}/`, appRoutes);
 
-    app.listen(PORT, () => {
+    app.listen(port, () => {
         console.info(MESSAGES.SERVER_START_SUCCESS);
     });
 };
